@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".finisch.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="319dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="10"
+        android:text="Transport"
+        android:textColor="#CF7C02"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="10"
+        android:text="guide"
+        android:textColor="#FEB02B"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/switch_language_but"
+        android:layout_width="74dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/change_language"
+        android:contentDescription="Change Language"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="174dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="68dp"
+
+
+        android:backgroundTint="#C8965F"
+        android:fontFamily="@font/montserrat_black"
+        android:onClick="Start"
+        android:shadowColor="@color/white"
+
+
+        android:shadowDx="5"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:text="Shall we start?"
+
+
+        android:textColor="@color/button_main"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <!-- Языковое окно -->
+    <LinearLayout
+        android:id="@+id/language_Layout"
+        android:layout_width="76dp"
+        android:layout_height="208dp"
+        android:background="@color/background_language_main"
+        android:orientation="vertical"
+
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:contentDescription="Change Language"
+            android:paddingTop="20px"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/english_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:contentDescription="Change Language"
+            android:paddingTop="10px"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/russian_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:contentDescription="Change Language"
+            android:paddingTop="10px"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/romanian_icon" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
